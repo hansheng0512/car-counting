@@ -1,0 +1,6 @@
+path: ../car_dataset  # dataset root dir
+train: images/train  # train images
+val: images/val  # val images
+
+nc: 1  # number of classes
+names: ['car']  # class names
