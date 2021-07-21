@@ -197,9 +197,12 @@ def detect(opt):
                     bbox_xyxy = outputs[:, :4]
                     identities = outputs[:, -1]
                     count = identities[-1]
+                    cv2.putText(im0, "Han Sheng", (850, 95), cv2.FONT_HERSHEY_PLAIN, 4, (255, 255, 255), 4, cv2.LINE_AA)
+                    cv2.putText(im0, str(count), (1700, 95), cv2.FONT_HERSHEY_PLAIN, 4, (255, 255, 255), 4, cv2.LINE_AA)
                     draw_boxes(im0, bbox_xyxy, identities)
                     # to MOT format
                     tlwh_bboxs = xyxy_to_tlwh(bbox_xyxy)
+
 
                     # Write MOT compliant results to file
                     if save_txt:

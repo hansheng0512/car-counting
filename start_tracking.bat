@@ -1,1 +1,1 @@
-python track.py --source DRONE-SURVEILLANCE-CONTEST-VIDEO.mp4 --yolo_weights best.pt --img 640 --show-vid --save-vid --conf-thres 0.8 --iou-thres 0.2 --save-txt
+python track.py --source DRONE-SURVEILLANCE-CONTEST-VIDEO.mp4 --yolo_weights best.pt --img 640 --show-vid --save-vid --conf-thres 0.65 --iou-thres 0.5 --save-txt
